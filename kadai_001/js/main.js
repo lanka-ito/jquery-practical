@@ -29,7 +29,7 @@ $(window).scroll(function () {
 });
 
 // ページ内スクロールをスムーズにする
-$('a[href^="#"]').click(function() {
+$('a[href^="#"]').click(function () {
   const speed = 500;
   const href = $(this).attr('href');
   let $target;
@@ -39,7 +39,7 @@ $('a[href^="#"]').click(function() {
     $target = $(href);
   }
   const position = $target.offset().top;
-  $('html, body').animate({'scrollTop': position}, speed, 'swing');
+  $('html, body').animate({ 'scrollTop': position }, speed, 'swing');
   return false;
 });
 
